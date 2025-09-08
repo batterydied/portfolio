@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: dark;
+}
+html, body, #root{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.Montserrat{
+  font-family: 'Montserrat', Inter;
+}
