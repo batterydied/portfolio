@@ -5,7 +5,9 @@ import { motion } from "motion/react"
 const Hero = () => {
     return (
         <div className='w-full relative inline-block'>
-            <img src={bg} className='w-full rounded-md' draggable="false"/>
+            <div className='w-full h-full'>
+                <img src={bg} className='rounded-md' draggable="false"/>
+            </div>
             <svg className='absolute z-[50] right-[6%] top-[8%] w-[25%]' viewBox="0 0 215 166" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <motion.path 
                 initial={{pathLength: 0}}
