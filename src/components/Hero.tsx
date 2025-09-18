@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 const Hero = () => {
     return (
         <div className='w-full relative inline-block'>
-            <div className='w-full aspect-[1510/779] bg-gray-400'>
+            <div className='w-full aspect-[1510/779]'>
                 <img src={bg} className='rounded-md' draggable="false"/>
             </div>
             <svg className='absolute z-[50] right-[6%] top-[8%] w-[25%]' viewBox="0 0 215 166" fill="none" xmlns="http://www.w3.org/2000/svg">
