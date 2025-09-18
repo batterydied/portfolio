@@ -3,7 +3,7 @@ import a1 from '../assets/a1.png'
 import a2 from '../assets/a2.png'
 import { useRef, useEffect, useState } from "react"
 
-const Intro = () => {
+const Intro = ({isImgLoaded} : {isImgLoaded: boolean}) => {
     const [flipped, setFlipped] = useState(false);
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
@@ -11,12 +11,12 @@ const Intro = () => {
     const slideControls = useAnimation()
 
     useEffect(()=>{
-        if(isInView){ 
+        if(isInView && isImgLoaded){ 
             mainControls.start('visible')
             slideControls.start('clear')
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isInView])
+    }, [isInView, isImgLoaded])
 
     const handleClick = () => {
         setFlipped(prev => !prev);
