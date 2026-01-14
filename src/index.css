@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Itim&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes: dark;
+
+:root {
+  /* Backgrounds */
+  --bg: #0D0D0D;         /* Main background */
+  
+  /* Hover / selected items */
+  --selected: #383838;   /* Lighter than secondary to stand out on hover */
+  
+  /* Text */
+  --text: #ebebeb;       /* Soft, casual white for readability */
+
+  /* Borders / dividers */
+  --border: #5c5c5c;     /* Lighter than selected, subtle but visible */
+
+  /* Accents */
+  --primary: #141414;    /* Very dark gray for primary elements */
+  --secondary: #1F1F1F;  /* Lighter than primary for secondary elements */
 }
+
 html, body, #root{
   height: 100vh;
   width: 100vw;
