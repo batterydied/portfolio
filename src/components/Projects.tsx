@@ -44,14 +44,14 @@ const projects: Project[] = [
         name: "Chatter",
         description: "Real time web chat platform built with React and Firebase.",
         githubLink: "https://github.com/batterydied/chatter",
-        demoLink: "chatter-s3t1.vercel.app",
+        demoLink: "https://chatter-s3t1.vercel.app",
         image: i3
     },
     {
         name: "Stargazer",
         description: "Astronomical event web application built with React, MongoDB, and Clerk.",
         githubLink: "",
-        demoLink: "stargazer320.vercel.app",
+        demoLink: "https://stargazer320.vercel.app",
         image: i4
     },
 
