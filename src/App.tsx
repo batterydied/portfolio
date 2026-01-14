@@ -3,13 +3,13 @@ import Navbar from "./components/Navbar"
 import TechStack from "./components/TechStack"
 import Map from "./components/Map"
 import Clock from "./components/Clock"
+import Projects from "./components/Projects"
 
 function App() {
   return (
-    <div className="bg-[var(--bg)] w-full min-h-screen flex flex-col justify-center items-center">
-      <div className="relative bg-b w-full h-screen flex justify-center overflow-visible">
-        
-        <div className="bg-[var(--primary)] min-w-[300px] w-[35%] h-full flex flex-col overflow-visible">
+    <div className="bg-[var(--bg)] w-full h-screen overflow-y-scroll">
+      <div className="w-full h-screen flex justify-center items-start">
+        <div className="bg-[var(--primary)] min-w-[300px] w-[35%] flex flex-col overflow-visible">
           <Navbar />
           <div className="relative mt-10">
             <Map />
@@ -19,6 +19,7 @@ function App() {
           </div>
           <Intro />
           <TechStack />
+          <Projects />
         </div>
       </div>
     </div>

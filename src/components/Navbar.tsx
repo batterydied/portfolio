@@ -1,3 +1,4 @@
+import DownloadSVG from "./svg/DownloadSVG"
 import GithubSVG from "./svg/GithubSVG"
 import MailSVG from "./svg/MailSVG"
 
@@ -8,9 +9,10 @@ const Navbar = () => {
                 <div className="text-[var(--text)] font-bold text-2xl hover:cursor-pointer">
                 BENSON ZHENG
                 </div>
-                <div className="text-[var(--border)] grid grid-cols-2 gap-2" >
+                <div className="text-[var(--border)] flex items-center justify-center gap-2" >
                     <GithubSVG />
                     <MailSVG />
+                    <DownloadSVG />
                 </div>
             </div>
         </div>

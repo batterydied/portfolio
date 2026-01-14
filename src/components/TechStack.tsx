@@ -20,7 +20,7 @@ export default function TechStack() {
         { name: "Firebase", Icon: FirebaseSVG },
     ]
     return (
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-4 gap-2 mb-10">
             {techStacks.map((e)=><TechStackEntry name={e.name} Icon={e.Icon}/>)}
         </div>
     )
